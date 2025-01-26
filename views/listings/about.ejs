@@ -33,6 +33,7 @@
           </div>
         </div>
       </div>
+      
     </section>
   
     <!-- Why Choose Us Section -->
@@ -68,11 +69,71 @@
         </div>
       </div>
     </section>
+    <section id="how-we-work" class="py-5">
+      <h2 class="text-center mb-5">How We Work</h2>
+      <div class="row g-4">
+        <div class="col-md-4 work-step">
+          <div class="card shadow h-100 work-card">
+            <div class="card-body text-center">
+              <i class="bi bi-clipboard-check display-4 text-primary animate-icon"></i>
+              <h5 class="card-title mt-3">Requirement Gathering</h5>
+              <p class="card-text">We begin by understanding your requirements thoroughly to ensure that we meet your business needs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 work-step">
+          <div class="card shadow h-100 work-card">
+            <div class="card-body text-center">
+              <i class="bi bi-bar-chart-line display-4 text-danger animate-icon"></i>
+              <h5 class="card-title mt-3">Analysis & Planning</h5>
+              <p class="card-text">We analyze the gathered data and create a detailed project plan to ensure smooth execution.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 work-step">
+          <div class="card shadow h-100 work-card">
+            <div class="card-body text-center">
+              <i class="bi bi-pencil-square display-4 text-success animate-icon"></i>
+              <h5 class="card-title mt-3">Designing</h5>
+              <p class="card-text">Our design team creates an intuitive and visually appealing layout tailored to your target audience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 work-step">
+          <div class="card shadow h-100 work-card">
+            <div class="card-body text-center">
+              <i class="bi bi-cpu display-4 text-info animate-icon"></i>
+              <h5 class="card-title mt-3">Development</h5>
+              <p class="card-text">Our development team turns the design into a fully functional and user-friendly product.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 work-step">
+          <div class="card shadow h-100 work-card">
+            <div class="card-body text-center">
+              <i class="bi bi-check-circle display-4 text-warning animate-icon"></i>
+              <h5 class="card-title mt-3">Testing & QA</h5>
+              <p class="card-text">We rigorously test the product for bugs and ensure it meets quality standards.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 work-step">
+          <div class="card shadow h-100 work-card">
+            <div class="card-body text-center">
+              <i class="bi bi-cloud-upload display-4 text-dark animate-icon"></i>
+              <h5 class="card-title mt-3">Deployment</h5>
+              <p class="card-text">We deploy your product to the live environment, ensuring it's ready for the world to see.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
   
     <!-- CEO Information Section -->
     <section id="ceo" class="text-center py-5">
       <h2 class="mb-4">Our CEO</h2>
-      <img src="https://i.ibb.co/M8Cqyks/maja-photo.jpg" alt="Tejas Surse" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+      <img src="https://i.ibb.co/M8Cqyks/maja-photo.jpg" alt="Tejas Surse" class="rounded-circle mb-3" style="width: 250px; object-fit: cover;">
       <h3>Tejas Surse</h3>
       <p class="text-muted">Founder & CEO, DreamCraft.dev</p>
       <p>Passionate about crafting innovative solutions to empower businesses worldwide.</p>
@@ -94,3 +155,23 @@
       </div>
     </section>
   </main>
+
+  <!-- AOS Script for Animation -->
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const workSteps = document.querySelectorAll('.work-step');
+  
+    const checkVisibility = () => {
+      workSteps.forEach(step => {
+        const rect = step.getBoundingClientRect();
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+          step.classList.add('visible');
+        }
+      });
+    };
+  
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // To handle initial load
+  });
+  
+</script>
