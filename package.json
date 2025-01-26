@@ -1,0 +1,32 @@
+{ "engines": {
+    "node": "20.14.0"
+  },
+  "name": "dreamcraft.dev",
+  "version": "1.0.0",
+  "description": "Regards Web and Mobile Application Devlopment.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Mobile",
+    "Applicaion",
+    "web",
+    "application",
+    "app",
+    "website",
+    "devlopment"
+  ],
+  "author": "Tejas Sunil Surse",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.21.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.12.0",
+    "nodemon": "^3.1.9"
+  }
+}

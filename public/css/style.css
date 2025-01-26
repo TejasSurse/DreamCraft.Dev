@@ -1,0 +1,181 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Navbar */
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+  
+  .nav-link:hover {
+    color: #ffcc00;
+  }
+  
+/* General Animations */
+.animate-fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 1.5s ease-in-out;
+  }
+  
+  .animate-bounce {
+    animation: bounce 1.5s infinite;
+  }
+  
+  .animate-zoom {
+    animation: zoomIn 1.5s ease-in-out;
+  }
+  
+  /* Hero Section */
+  .bg-hero {
+    background: linear-gradient(45deg, #007bff, #6610f2);
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+  }
+  
+  /* Cards */
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-body i {
+    transition: transform 0.3s ease;
+  }
+  
+  .card-body i:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Keyframes for Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+
+  /* Footer */
+  /* Footer */
+  footer {
+    font-size: 1rem;
+  }
+
+  footer a {
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  footer a:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
+  }
+
+  footer .bi {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  footer .bi:hover {
+    color: #ffcc00;
+  }
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .whatsapp-float i {
+    font-size: 28px;
+  }
+  
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+
+/*About Page */
+.service-card, .choose-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .service-card:hover, .choose-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .social-icon {
+    color: #333;
+    font-size: 1rem;
+    transition: transform 0.3s, color 0.3s;
+  }
+  .social-icon:hover {
+    transform: scale(1.2);
+    color: #007bff;
+  }
