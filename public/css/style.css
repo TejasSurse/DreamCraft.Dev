@@ -338,3 +338,194 @@ form button:hover {
     transform: translateY(0);
   }
 }
+
+
+
+/* join us page */
+
+/* Scope styles to the Dreamcraft page */
+.dreamcraft-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.dreamcraft-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.dreamcraft-page h1, 
+.dreamcraft-page h2, 
+.dreamcraft-page h3 {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.dreamcraft-page h1 {
+    color: #1e40af;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.dreamcraft-page h2 {
+    font-size: 1.75rem;
+    color: #1e3a8a;
+    font-weight: 600;
+}
+
+.dreamcraft-page h3 {
+    font-size: 1.25rem;
+    color: #4338ca;
+    font-weight: 500;
+}
+
+.dreamcraft-page p, 
+.dreamcraft-page li {
+    color: #4b5563;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.dreamcraft-page ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+}
+
+.dreamcraft-page ol {
+    list-style-type: decimal;
+}
+
+.dreamcraft-page section {
+    margin-bottom: 3rem;
+}
+
+.dreamcraft-page .text-center {
+    text-align: center;
+}
+
+.dreamcraft-page .bg-white {
+    background-color: #ffffff;
+}
+
+.dreamcraft-page .rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.dreamcraft-page .shadow-lg {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dreamcraft-page .p-6 {
+    padding: 1.5rem;
+}
+
+.dreamcraft-page .mb-12 {
+    margin-bottom: 3rem;
+}
+
+.dreamcraft-page .mb-16 {
+    margin-bottom: 4rem;
+}
+
+.dreamcraft-page .grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.dreamcraft-page .grid-cols-1 {
+    grid-template-columns: 1fr;
+}
+
+.dreamcraft-page .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.dreamcraft-page a {
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.dreamcraft-page .bg-blue-600 {
+    background-color: #2563eb;
+}
+
+.dreamcraft-page .bg-blue-700 {
+    background-color: #1d4ed8;
+}
+
+.dreamcraft-page .text-white {
+    color: #ffffff;
+}
+
+.dreamcraft-page .px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.dreamcraft-page .py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.dreamcraft-page .hover\:bg-blue-700:hover {
+    background-color: #1d4ed8;
+}
+
+.dreamcraft-page .hover-bounce {
+    transition: transform 0.2s ease-in-out;
+}
+
+.dreamcraft-page .hover-bounce:hover {
+    transform: translateY(-5px);
+}
+
+.dreamcraft-page .fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+.dreamcraft-page @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dreamcraft-page i {
+    font-size: 1.25rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.dreamcraft-page .text-yellow-500 {
+    color: #f59e0b;
+}
+
+.dreamcraft-page .text-green-500 {
+    color: #10b981;
+}
+
+.dreamcraft-page .text-gray-600 {
+    color: #4b5563;
+}
+
+.dreamcraft-page .text-gray-700 {
+    color: #374151;
+}
+
+.dreamcraft-page .ml-6 {
+    margin-left: 1.5rem;
+}
+
+.dreamcraft-page .mt-4 {
+    margin-top: 1rem;
+}
+
+.dreamcraft-page .text-indigo-600 {
+    color: #4f46e5;
+}

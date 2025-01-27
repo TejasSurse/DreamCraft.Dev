@@ -107,6 +107,10 @@ app.post("/contact", async(req, res) => {
   }
 });
 
+app.get("/joinus", (req, res)=>{
+    res.render('listings/joinus');
+});
+
 
 // underconstruction
 app.use((req, res) => {
