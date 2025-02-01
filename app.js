@@ -72,20 +72,14 @@ app.set('views', path.join(__dirname, 'views'));
 app.get('/', (req, res) => {
     res.render('listings/home');
 });
-
-
 app.get("/about", (req, res)=>{
     res.render('listings/about');
 });
-
-
-
 // contact form
 
 app.get("/contact", (req, res)=>{
     res.render('listings/contact');
 });
-
 app.post("/contact", async(req, res) => {
   const { name, number, email, message } = req.body;
 
@@ -106,12 +100,9 @@ app.post("/contact", async(req, res) => {
     res.render("listings/error", { title: "Failed to send enquiry. Please try again later." });
   }
 });
-
 app.get("/joinus", (req, res)=>{
     res.render('listings/joinus');
 });
-
-
 // underconstruction
 app.use((req, res) => {
     res.status(404).render('listings/404');
